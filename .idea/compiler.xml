@@ -5,6 +5,9 @@
       <module name="Lab1Inclass" target="21" />
       <module name="Lab1Inclass.main" target="21" />
       <module name="Lab1Inclass.test" target="21" />
+      <module name="StartGradle" target="21" />
+      <module name="StartGradle.main" target="21" />
+      <module name="StartGradle.test" target="21" />
     </bytecodeTargetLevel>
   </component>
 </project>
