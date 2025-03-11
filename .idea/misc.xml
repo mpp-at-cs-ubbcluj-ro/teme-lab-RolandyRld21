@@ -3,6 +3,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/Lab1Inclass" />
     <file type="web" url="file://$PROJECT_DIR$/StartGradle" />
+    <file type="web" url="file://$PROJECT_DIR$/TemaLab3" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="21" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
