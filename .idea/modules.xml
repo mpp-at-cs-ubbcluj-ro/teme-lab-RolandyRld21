@@ -11,6 +11,9 @@
       <module fileurl="file://$PROJECT_DIR$/TemaLab3.iml" filepath="$PROJECT_DIR$/TemaLab3.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/TemaLab3.main.iml" filepath="$PROJECT_DIR$/.idea/modules/TemaLab3.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/TemaLab3.test.iml" filepath="$PROJECT_DIR$/.idea/modules/TemaLab3.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TemaLab4.iml" filepath="$PROJECT_DIR$/TemaLab4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TemaLab4.main.iml" filepath="$PROJECT_DIR$/.idea/modules/TemaLab4.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TemaLab4.test.iml" filepath="$PROJECT_DIR$/.idea/modules/TemaLab4.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/teme-lab-RolandyRld21.iml" filepath="$PROJECT_DIR$/.idea/teme-lab-RolandyRld21.iml" />
     </modules>
   </component>

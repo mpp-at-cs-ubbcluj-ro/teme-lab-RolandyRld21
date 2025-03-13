@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/util
+           http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <!-- JDBC Configuration (Fixing Windows Path) -->
+    <util:properties id="jdbcProps1">
+        <prop key="tasks.jdbc.url">jdbc:sqlite:C:/Users/sergi/IdeaProjects/teme-lab-RolandyRld21/TemaLab4/RepairShopDB.db</prop>
+    </util:properties>
+
+    <!-- Load additional properties from classpath (Make sure bd.config exists) -->
+    <util:properties id="jdbcProps" location="classpath:bd.config"/>
+
+    <!-- Use classpath: to correctly load files inside resources/ -->
+    <bean id="requestRepoFile" class="repository.file.ComputerRepairRequestFileRepository">
+        <constructor-arg value="ComputerRequests.txt"/>
+    </bean>
+
+    <bean id="requestRepoJdbc" class="repository.jdbc.ComputerRepairRequestJdbcRepository">
+        <constructor-arg ref="jdbcProps"/>
+    </bean>
+
+    <bean id="formsRepoFile" class="repository.file.ComputerRepairedFormFileRepository">
+        <constructor-arg value="RepairedForms.txt"/>
+        <constructor-arg ref="requestRepoFile"/>
+    </bean>
+
+    <bean id="formsRepoJdbc" class="repository.jdbc.ComputerRepairedFormJdbcRepository">
+        <constructor-arg ref="jdbcProps"/>
+    </bean>
+
+    <bean id="shopService" class="services.ComputerRepairServices">
+        <constructor-arg ref="requestRepoFile"/>
+        <constructor-arg ref="formsRepoFile"/>
+    </bean>
+
+</beans>
